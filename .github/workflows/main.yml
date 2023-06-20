@@ -22,6 +22,7 @@ jobs:
           
       - name: cloning the project
         run: |
+          git init
           git clone https://github.com/abdul-rehman01/project.git
           cd project/
       
