@@ -17,7 +17,7 @@ jobs:
        
           echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S mkdir -p /home/abdul/project/
           cd /home/abdul/
-          echo "${{ secret.SUDO_PASSWORD  }}" | sudo chmod 777 project
+          echo "${{ secrets.SUDO_PASSWORD  }}" | sudo chmod 777 project
           cd /home/abdul/project/
           
       - name: cloning the project
