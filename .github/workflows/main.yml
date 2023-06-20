@@ -12,9 +12,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: update and upgrade 
+        run: |    
+          echo "${{ secrets.SUDO_PASSWORD }}"  | sudo -S apt-get update -y
+          echo "${{ secrets.SUDO_PASSWORD }}"  | sudo -S apt-get upgrade -y
+              
+
+           
       - name: Create folder on server 
         run: |
-       
+          
           echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S mkdir -p /home/abdul/project/
           cd /home/abdul/
           echo "${{ secrets.SUDO_PASSWORD  }}" | sudo chmod 777 project
