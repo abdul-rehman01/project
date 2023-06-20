@@ -25,10 +25,11 @@ jobs:
           cd /home/abdul/project/
           git init
           git clone https://github.com/abdul-rehman01/project.git
-          cd /home/abdul/project/project/
+          
       
       - name: running bash script
         run: |
+          cd /home/abdul/project/project/
           bash main.sh
 
  
