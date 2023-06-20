@@ -8,8 +8,6 @@ file_content=$(cat /home/abdul/project/project/main.txt)
 
 if [[ $file_content == *development*  ]]; then
 
-echo $PASSWORD | sudo -S apt-get update -y
-echo $PASSWORD | sudo -S apt-get upgrade -y
 
 echo $PASSWORD | sudo -S apt-get install apache2 -y
 
