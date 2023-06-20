@@ -19,7 +19,7 @@ jobs:
           cd /home/abdul/
           echo "${{ secrets.SUDO_PASSWORD  }}" | sudo chmod 777 project
           cd /home/abdul/project/
-          
+           
       - name: cloning the project
         run: |
           git init
