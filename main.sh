@@ -3,7 +3,7 @@
 PASSWORD="123456"
 
 
-file_content=$(cat /home/abdul/project/main.txt)
+file_content=$(cat /home/abdul/project/project/main.txt)
 
 
 if [[ $file_content == *development*  ]]; then
