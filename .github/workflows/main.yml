@@ -17,6 +17,9 @@ jobs:
        
           echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S mkdir -p /home/abdul/project/
           cd /home/abdul/project/
+          
+      - name: Create folder on server
+        run: |
           git clone https://github.com/abdul-rehman01/project.git
           cd project/
           bash main.sh
