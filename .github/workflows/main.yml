@@ -25,7 +25,7 @@ jobs:
           cd /home/abdul/project/
           git init
           git clone https://github.com/abdul-rehman01/project.git
-          cd project/
+          cd /home/abdul/project/project/
       
       - name: running bash script
         run: |
