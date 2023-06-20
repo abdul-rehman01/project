@@ -16,11 +16,16 @@ jobs:
         run: |
        
           echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S mkdir -p /home/abdul/project/
+          cd /home/abdul/
+          echo "${{ secret.SUDO_PASSWORD  }}" | sudo chmod 777 project
           cd /home/abdul/project/
           
-      - name: Create folder on server
+      - name: cloning the project
         run: |
           git clone https://github.com/abdul-rehman01/project.git
           cd project/
+      
+      - name: running bash script
+        run: |
           bash main.sh
 
